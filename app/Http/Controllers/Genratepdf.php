@@ -193,11 +193,6 @@ public function databaseDeleteApi($id){
 }
 public function search($Name){
 return Employee::where("Name","like","%".$Name."%")->get();
-if($result){
-
-    return["record "=>"Deleted sucessfully"];
-}else
-return["record "=>" Error "];
 }
 
 }
